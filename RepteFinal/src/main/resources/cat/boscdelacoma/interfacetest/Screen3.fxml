@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="240" prefWidth="360.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cat.boscdelacoma.interfacetest.Screen3Controller">
+   <children>
+      <AnchorPane layoutY="-3.0" prefHeight="480.0" prefWidth="149.0" style="-fx-background-color: rgba(47, 47, 47, 0.7);" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button fx:id="boto_modificar" layoutX="16.0" layoutY="240.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="121.0" style="-fx-background-color: green;" text="MODIFICAR" textFill="WHITE">
+               <font>
+                  <Font name="Copperplate Gothic Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button layoutX="16.0" layoutY="290.0" mnemonicParsing="false" onAction="#borrarDino" prefHeight="40.0" prefWidth="121.0" style="-fx-background-color: red;" text="ELIMINAR" textFill="WHITE">
+               <font>
+                  <Font name="Copperplate Gothic Bold" size="13.0" />
+               </font>
+            </Button>
+            <TextField fx:id="nomField" alignment="CENTER" layoutX="9.0" layoutY="31.0" opacity="0.87" prefHeight="31.0" prefWidth="132.0" promptText="NOM">
+               <font>
+                  <Font name="Copperplate Gothic Bold" size="12.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="edatField" alignment="CENTER" layoutX="9.0" layoutY="76.0" opacity="0.87" prefHeight="31.0" prefWidth="132.0" promptText="EDAT">
+               <font>
+                  <Font name="Copperplate Gothic Bold" size="12.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="tipusField" alignment="CENTER" layoutX="9.0" layoutY="123.0" opacity="0.87" prefHeight="31.0" prefWidth="132.0" promptText="TIPUS">
+               <font>
+                  <Font name="Copperplate Gothic Bold" size="12.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="pesField" alignment="CENTER" layoutX="9.0" layoutY="169.0" opacity="0.87" prefHeight="31.0" prefWidth="132.0" promptText="PES ( KG )">
+               <font>
+                  <Font name="Copperplate Gothic Bold" size="12.0" />
+               </font>
+            </TextField>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="table_dinos" layoutX="150.0" layoutY="94.0" prefHeight="386.0" prefWidth="470.0">
+        <columns>
+            <TableColumn fx:id="col_nom" prefWidth="127.99993896484375" text="NOM" />
+            <TableColumn fx:id="col_tipus" prefWidth="157.60003662109375" text="TIPUS" />
+            <TableColumn fx:id="col_pes" prefWidth="88.79995727539062" text="PES" />
+          <TableColumn fx:id="col_edat" editable="false" prefWidth="93.60003662109375" text="EDAT" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <ComboBox layoutX="294.0" layoutY="25.0" prefHeight="40.0" prefWidth="199.0" promptText="QUIN PARC VOLS TRIAR?" style="-fx-border-width: 2px 2px 2px 2px;" />
+   </children>
+</AnchorPane>

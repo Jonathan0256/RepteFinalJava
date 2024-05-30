@@ -1,0 +1,19 @@
+.button{
+     -fx-border-color: white;
+     -fx-background-color: transparent;
+     -fx-border-width: 0px 0px 2px 0px;
+     -fx-cursor: pointer;
+}
+
+.button:hover{
+    -fx-background-color: rgba(254,0,0,1,0.5);
+}
+.panel{
+    -fx-background-image: url(jurassicpark.jpg);
+    -fx-background-size: cover;
+    -fx-background-position: center;
+}
+
+.textField{
+    -fx-text-fill: white;
+}

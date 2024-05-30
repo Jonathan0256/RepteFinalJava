@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="480.0" prefWidth="780.0" styleClass="panel" stylesheets="@jonacss.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cat.boscdelacoma.interfacetest.MainScreenController">
+   <children>
+      <BorderPane fx:id="mainPane" prefHeight="482.0" prefWidth="725.0">
+         <left>
+            <VBox prefHeight="482.0" prefWidth="167.0" style="-fx-background-color: rgb(47,47,47,0.9);" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="button" mnemonicParsing="false" onAction="#handleButton1Action" onMouseClicked="#handleButton1Action" prefHeight="50.0" prefWidth="172.0" stylesheets="@jonacss.css" text="PRINCIPAL" textFill="WHITE">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Copperplate Gothic Bold" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#handleButton2Action" prefHeight="50.0" prefWidth="169.0" stylesheets="@jonacss.css" text="AFEGIR" textFill="#fcfcfc">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Copperplate Gothic Bold" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#handleButton5Action" prefHeight="50.0" prefWidth="173.0" stylesheets="@jonacss.css" text="LLISTAR" textFill="WHITE">
+                     <font>
+                        <Font name="Copperplate Gothic Bold" size="16.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+         </left>
+      </BorderPane>
+   </children>
+</AnchorPane>
